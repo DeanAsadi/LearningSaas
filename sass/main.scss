@@ -1,6 +1,4 @@
-$small: 1rem;
-$sans: Arial, sans-serif;
-
+@import "var";
 @mixin fonts {
   // similar to defining a function and use it in multiple places
   font: {
@@ -34,10 +32,6 @@ p.leave {
 //---------------------------------------------------------------------------------------------------------
 // @extend : It's like you're extending class, in JS. You're going to inherite evertthing from that class .warn.
 //
-$bad: 991010;
-$med: 1.5 rem;
-$backgound: black;
-$colorGray: grey;
 
 .warn {
   color: $bad;
@@ -66,3 +60,13 @@ a {
   // This is going to extend all properity inside of "a" tag.
   @extend a;
 }
+
+//---------------------------------------------------------------------------------------------------------
+// partials ---> A file with (-) infront of it.
+// @import : if you don't want to include "scss" files into your "css" partials
+// to include, the "_" file, use @import and file name
+
+// When we import another css file, once we save, it will automatically add it to our main.css file
+@import "other.css";
+
+//---------------------------------------------------------------------------------------------------------
