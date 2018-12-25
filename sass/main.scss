@@ -1,5 +1,26 @@
-$grey: #ddd;
+$small: 1rem;
+$sans: Arial, sans-serif;
+
+@mixin fonts {
+  // similar to defining a function and use it in multiple places
+  font: {
+    size: $small;
+    weight: 500;
+    family: $sans;
+  }
+}
+
+@mixin transitProps($val) {
+  //when you add (), it allow's you to pass values into it.
+  opacity: $val;
+  transform: scale($val);
+}
 
 p {
-  color: grey;
+  @include fonts; //using fonts method
+  @include transitProps(1);
+}
+p.leave {
+  @include fonts;
+  @include transitProps(0);
 }

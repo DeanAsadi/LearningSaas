@@ -1,5 +1,17 @@
 p {
-  color: grey;
+  font-size: 1rem;
+  font-weight: 500;
+  font-family: Arial, sans-serif;
+  opacity: 1;
+  transform: scale(1);
+}
+
+p.leave {
+  font-size: 1rem;
+  font-weight: 500;
+  font-family: Arial, sans-serif;
+  opacity: 0;
+  transform: scale(0);
 }
 
 /*# sourceMappingURL=main.css.map */
