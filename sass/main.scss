@@ -31,3 +31,38 @@ p.leave {
   @include transitProps(0);
   @include transit(opacity 0.6s, transform0.7s);
 }
+//---------------------------------------------------------------------------------------------------------
+// @extend : It's like you're extending class, in JS. You're going to inherite evertthing from that class .warn.
+//
+$bad: 991010;
+$med: 1.5 rem;
+$backgound: black;
+$colorGray: grey;
+
+.warn {
+  color: $bad;
+  font-size: $med;
+}
+.error {
+  @extend .warn;
+  font-family: $sans;
+}
+
+// Here, we're going to extends from class, warn & error
+.third {
+  @extend .error;
+  background-color: $backgound;
+}
+
+a {
+  color: $colorGray;
+  &:hover {
+    text-decoration: underline;
+  }
+}
+.link {
+  font-size: $med;
+  border: 1px solid salmon;
+  // This is going to extend all properity inside of "a" tag.
+  @extend a;
+}

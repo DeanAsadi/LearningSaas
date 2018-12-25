@@ -18,4 +18,29 @@ p.leave {
   transition: opacity 0.6s, transform0 0.7s;
 }
 
+.warn, .error, .third {
+  color: 991010;
+  font-size: 1.5 rem;
+}
+
+.error, .third {
+  font-family: Arial, sans-serif;
+}
+
+.third {
+  background-color: black;
+}
+
+a, .link {
+  color: grey;
+}
+a:hover, .link:hover {
+  text-decoration: underline;
+}
+
+.link {
+  font-size: 1.5 rem;
+  border: 1px solid salmon;
+}
+
 /*# sourceMappingURL=main.css.map */
