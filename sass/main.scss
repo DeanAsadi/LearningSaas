@@ -72,3 +72,22 @@ a {
 
 //---------------------------------------------------------------------------------------------------------
 // custom functions :
+// You can write a sunction and reuse that function anywhere in your other files.
+
+//---------------------------------------------------------------------------------------------------------
+
+//Placeholders : they're similar to @mixin, except this when it's defined it wont's show in youe "css" file,
+// and it start's with (%)
+
+%placeHolder {
+  position: relative;
+  background: sandybrown;
+}
+
+.fred %placeHolder {
+  position: relative;
+  transform: rotate(30deg);
+}
+.william {
+  @extend %placeHolder; // the class .william, will be inside the class .fred
+}

@@ -44,4 +44,14 @@ a:hover, .link:hover {
   border: 1px solid salmon;
 }
 
+.william {
+  position: relative;
+  background: sandybrown;
+}
+
+.fred .william {
+  position: relative;
+  transform: rotate(30deg);
+}
+
 /*# sourceMappingURL=main.css.map */
