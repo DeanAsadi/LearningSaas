@@ -1,4 +1,4 @@
-@import "var";
+@import "var", "function";
 @mixin fonts {
   // similar to defining a function and use it in multiple places
   font: {
@@ -35,7 +35,8 @@ p.leave {
 
 .warn {
   color: $bad;
-  font-size: $med;
+  // used a function from (_function.scss) file below.
+  font-size: double($med);
 }
 .error {
   @extend .warn;
@@ -70,3 +71,4 @@ a {
 @import "other.css";
 
 //---------------------------------------------------------------------------------------------------------
+// custom functions :

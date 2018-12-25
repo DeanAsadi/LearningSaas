@@ -1,0 +1,4 @@
+@function double($size) {
+  @return $size * 2;
+}
+// Now, i can use this function in main.scss file and pass in a parameter

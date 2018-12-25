@@ -21,7 +21,7 @@ p.leave {
 
 .warn, .error, .third {
   color: 991010;
-  font-size: 1.5 rem;
+  font-size: 3;
 }
 
 .error, .third {
@@ -40,7 +40,7 @@ a:hover, .link:hover {
 }
 
 .link {
-  font-size: 1.5 rem;
+  font-size: 1.5;
   border: 1px solid salmon;
 }
 
