@@ -60,4 +60,24 @@ aside .side-ad {
   border-width: 2px;
 }
 
+body#Mohammed li.Mohammed a, body#Mohammed li.Mohammed .link {
+  font-weight: 900;
+  background-color: tomato;
+}
+
+body#dean li.dean a, body#dean li.dean .link {
+  font-weight: 900;
+  background-color: tomato;
+}
+
+body#asadi li.asadi a, body#asadi li.asadi .link {
+  font-weight: 900;
+  background-color: tomato;
+}
+
+body#software li.software a, body#software li.software .link {
+  font-weight: 900;
+  background-color: tomato;
+}
+
 /*# sourceMappingURL=main.css.map */

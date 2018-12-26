@@ -110,3 +110,21 @@ a#{$s} .#{$s}-ad {
   #{$b}-width: 2px;
 }
 //---------------------------------------------------------------------------------------------------------
+// Lists & Loops : Simillar to (for in loop $ Array's in JS)
+
+// $list : "bob" , "dean" , "asadi" , "software engineer";
+// Methods : length($list) --> to get the list length
+//            nth($list, 2)
+//            index($list, "fred")
+//            join($list, $list)  ----> To jion 2 lists
+//            appeand($list, "steve")
+
+$pages: "Mohammed", "dean", "asadi", "software";
+
+@each $pg in $pages {
+  body##{$pg} li.#{$pg} a {
+    font-weight: 900;
+    background-color: tomato;
+  }
+}
+//---------------------------------------------------------------------------------------------------------
