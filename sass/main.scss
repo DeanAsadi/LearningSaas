@@ -128,3 +128,34 @@ $pages: "Mohammed", "dean", "asadi", "software";
   }
 }
 //---------------------------------------------------------------------------------------------------------
+// @content Directive : adding a chunch of code
+
+$c: cornflowerblue;
+$bw: #ddd;
+
+@mixin clr() {
+  border: 1px solid red;
+  @content;
+}
+
+.colour {
+  @include clr {
+    // this whole code will be added to the clr (  )
+    background-color: springgreen;
+    border-color: snow;
+  }
+}
+
+@mixin clr($c: green) {
+  // setting a default value
+  border: 1px solid $c; // this will take the default value of ($c)--> green.
+  @content;
+}
+
+.colour {
+  @include clr(rebeccapurple) {
+    //
+    background-color: springgreen;
+    border-color: snow;
+  }
+}
