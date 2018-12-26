@@ -75,13 +75,13 @@ a {
 // You can write a sunction and reuse that function anywhere in your other files.
 
 //---------------------------------------------------------------------------------------------------------
-
 //Placeholders : they're similar to @mixin, except this when it's defined it wont's show in youe "css" file,
 // and it start's with (%)
 
 %placeHolder {
   position: relative;
   background: sandybrown;
+  color: rgb(248, 104, 79);
 }
 
 .fred %placeHolder {
@@ -91,3 +91,22 @@ a {
 .william {
   @extend %placeHolder; // the class .william, will be inside the class .fred
 }
+
+//---------------------------------------------------------------------------------------------------------
+// Interpolation : Similar to using template string in JS.
+
+$b: "border";
+$s: "side";
+
+//-----------------------------
+// aside .side-ad {
+//   box-sizing: border-box;
+//   border-width: 2px;
+// }
+// The above can be translated with (Interpolation) like below :
+
+a#{$s} .#{$s}-ad {
+  box-sizing: #{$b}-box;
+  #{$b}-width: 2px;
+}
+//---------------------------------------------------------------------------------------------------------
