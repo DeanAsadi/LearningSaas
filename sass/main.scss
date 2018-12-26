@@ -128,7 +128,7 @@ $pages: "Mohammed", "dean", "asadi", "software";
   }
 }
 //---------------------------------------------------------------------------------------------------------
-// @content Directive : adding a chunch of code
+// @content Directive : willalow you to have curly brcess {} around chunk of content
 
 $c: cornflowerblue;
 $bw: #ddd;
@@ -146,16 +146,41 @@ $bw: #ddd;
   }
 }
 
+// setting a default value
 @mixin clr($c: green) {
-  // setting a default value
   border: 1px solid $c; // this will take the default value of ($c)--> green.
   @content;
 }
 
 .colour {
   @include clr(rebeccapurple) {
-    //
-    background-color: springgreen;
+    // this chunk of code will use ($c) as --> (rebeccapurple)
+    background-color: $c;
     border-color: snow;
+  }
+}
+
+//---------------------------------------------------------------------------------------------------------
+// Data types :
+//Numbers : 1.2 44 1px
+// Strings : "a" 'a' a
+// Colors :
+// Boolean : true false
+// null : null
+// lists :
+// maps : like object in JS ( key: value, key2: value2 )
+// function refernce :
+//------
+//relational operators : < > <= >=
+// equality operators : != ==
+// math operator : + - * % /
+
+//---------------------------------------------------------------------------------------------------------
+// @for loop :
+
+// from 1 --> 5 included. if you replace "throght" with "to" it will not include 5
+@for $i from 1 through 5 {
+  p:nth-child(#{$i}) {
+    font-size: 1 rem;
   }
 }

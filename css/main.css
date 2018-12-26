@@ -88,8 +88,28 @@ body#software li.software a, body#software li.software .link {
 
 .colour {
   border: 1px solid rebeccapurple;
-  background-color: springgreen;
+  background-color: cornflowerblue;
   border-color: snow;
+}
+
+p:nth-child(1) {
+  font-size: 1 rem;
+}
+
+p:nth-child(2) {
+  font-size: 1 rem;
+}
+
+p:nth-child(3) {
+  font-size: 1 rem;
+}
+
+p:nth-child(4) {
+  font-size: 1 rem;
+}
+
+p:nth-child(5) {
+  font-size: 1 rem;
 }
 
 /*# sourceMappingURL=main.css.map */
