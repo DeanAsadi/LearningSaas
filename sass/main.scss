@@ -184,3 +184,19 @@ $bw: #ddd;
     font-size: 1 rem;
   }
 }
+
+//---------------------------------------------------------------------------------------------------------
+// @if @else if @else
+
+@mixin big($num1: 1px, $num2: null) {
+  font-size: $num1;
+  @if $num2 == null {
+    transform: rotate(2deg);
+  } @else if $num2 == true {
+    transform: rotate(30deg);
+  } @else {
+    transform: rotate(33deg);
+  }
+}
+
+//---------------------------------------------------------------------------------------------------------
