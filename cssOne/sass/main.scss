@@ -10,6 +10,14 @@
   transition: $props;
 }
 
+@mixin colors {
+  color: black;
+  background-color: gold;
+}
+
+div * {
+  font-family: $sans_1;
+}
 p {
   @include fonts;
 }
@@ -19,4 +27,17 @@ h2 {
 ul li a.sitelink {
   color: brown;
   @include transit(opacity 0.5s, transform0.4s);
+}
+
+#tutorials ol li {
+  color: green;
+}
+h3 + p {
+  font-style: italic;
+}
+h3 + p > a {
+  @include colors;
+}
+p[class] {
+  @include colors;
 }

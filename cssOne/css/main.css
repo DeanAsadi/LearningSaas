@@ -1,3 +1,7 @@
+div * {
+  font-family: "Comic Sans MS", cursive, sans-serif;
+}
+
 p {
   font-size: 1rem;
   font-family: Arial, sans-serif;
@@ -11,6 +15,24 @@ ul li a.sitelink {
   color: brown;
   -webkit-transition: opacity 0.5s, transform0 0.4s;
   transition: opacity 0.5s, transform0 0.4s;
+}
+
+#tutorials ol li {
+  color: green;
+}
+
+h3 + p {
+  font-style: italic;
+}
+
+h3 + p > a {
+  color: black;
+  background-color: gold;
+}
+
+p[class] {
+  color: black;
+  background-color: gold;
 }
 
 /*# sourceMappingURL=main.css.map */
