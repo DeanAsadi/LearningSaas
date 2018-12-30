@@ -1,0 +1,62 @@
+@import "paragraph.css";
+
+/* @import rules must precede all others */
+
+* {
+  /* Change everything on the entire document */
+  font-family: "Arial Black", Gadget, sans-serif;
+}
+
+/* Anything inside of a div */
+div * {
+  font-family: "Comic Sans MS", cursive, sans-serif;
+}
+
+.sitelink {
+  font-family: Georgia, serif;
+}
+
+#tonyquote {
+  font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+  color: black;
+}
+
+/* Change .sitelink class inside of a (p) */
+p.sitelink {
+  font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+  color: black;
+}
+
+span#tonyname {
+  font-family: "Times New Roman", Times, serif;
+  color: blue;
+}
+/* Target <li> inside of <ol> inside of ID (#tutorials) */
+#tutorials ol li {
+  color: purple;
+}
+
+#tutorials ul li {
+  color: green;
+}
+/* Target <p> that comes immediatly next after <h3>  */
+h3 + p {
+  font-style: italic;
+}
+/* Target <a> that's inside <p> that's after <h3> */
+h3 + p > a {
+  color: red;
+}
+/* Target every single <p> that has a class */
+p[class] {
+  background: gray;
+}
+
+/* Target every single <p> that has a an ID */
+p[id] {
+  background: yellow;
+}
+/* Target all * the alt with the name of "nintendo" */
+*[alt~="nintendo"] {
+  background: orange;
+}
