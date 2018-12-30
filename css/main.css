@@ -16,15 +16,18 @@ p.leave {
   opacity: 0;
   transform: scale(0);
   -webkit-transition: opacity 0.6s, transform0 0.7s;
-  transition: opacity 0.6s, transform0 0.7s;
+  transition: opacity 0.5s, transform0 0.7s;
 }
 
-.warn, .error, .third {
+.warn,
+.error,
+.third {
   color: 991010;
   font-size: 3;
 }
 
-.error, .third {
+.error,
+.third {
   font-family: Arial, sans-serif;
 }
 
@@ -32,10 +35,12 @@ p.leave {
   background-color: black;
 }
 
-a, .link {
+a,
+.link {
   color: grey;
 }
-a:hover, .link:hover {
+a:hover,
+.link:hover {
   text-decoration: underline;
 }
 
@@ -60,22 +65,26 @@ aside .side-ad {
   border-width: 2px;
 }
 
-body#Mohammed li.Mohammed a, body#Mohammed li.Mohammed .link {
+body#Mohammed li.Mohammed a,
+body#Mohammed li.Mohammed .link {
   font-weight: 900;
   background-color: tomato;
 }
 
-body#dean li.dean a, body#dean li.dean .link {
+body#dean li.dean a,
+body#dean li.dean .link {
   font-weight: 900;
   background-color: tomato;
 }
 
-body#asadi li.asadi a, body#asadi li.asadi .link {
+body#asadi li.asadi a,
+body#asadi li.asadi .link {
   font-weight: 900;
   background-color: tomato;
 }
 
-body#software li.software a, body#software li.software .link {
+body#software li.software a,
+body#software li.software .link {
   font-weight: 900;
   background-color: tomato;
 }
