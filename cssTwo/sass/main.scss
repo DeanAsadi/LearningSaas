@@ -8,3 +8,8 @@
   @extend #lorem;
   font-family: "Courier New", Courier, monospace;
 }
+
+#fvSmallCaps {
+  @extend #fsItalic;
+  background-color: darkslategray;
+}

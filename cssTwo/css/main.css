@@ -1,11 +1,14 @@
-#lorem,
-#fsItalic {
+#lorem, #fsItalic, #fvSmallCaps {
   color: red;
   font-size: 4;
 }
 
-#fsItalic {
+#fsItalic, #fvSmallCaps {
   font-family: "Courier New", Courier, monospace;
+}
+
+#fvSmallCaps {
+  background-color: darkslategray;
 }
 
 /*# sourceMappingURL=main.css.map */
