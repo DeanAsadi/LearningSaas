@@ -12,4 +12,7 @@
 #fvSmallCaps {
   @extend #fsItalic;
   background-color: darkslategray;
+  &:hover {
+    text-decoration: underline;
+  }
 }
