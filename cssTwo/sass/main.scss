@@ -4,3 +4,7 @@
   color: red;
   font-size: double(2);
 }
+#fsItalic {
+  @extend #lorem;
+  font-family: "Courier New", Courier, monospace;
+}

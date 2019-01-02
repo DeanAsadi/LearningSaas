@@ -1,6 +1,11 @@
-#lorem {
+#lorem,
+#fsItalic {
   color: red;
   font-size: 4;
+}
+
+#fsItalic {
+  font-family: "Courier New", Courier, monospace;
 }
 
 /*# sourceMappingURL=main.css.map */
