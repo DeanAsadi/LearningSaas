@@ -17,15 +17,6 @@ $s: "center";
   text-align: #{$s};
 }
 
-// $pages: "Mohammed", "dean", "asadi", "software";
-
-// @each $pg in $pages {
-//   body##{$pg} li.#{$pg} a {
-//     font-weight: 900;
-//     background-color: tomato;
-//   }
-// }
-
 $id: "top-right-pos", "bottom-left-tr-parent";
 
 @each $i in $id {
