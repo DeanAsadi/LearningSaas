@@ -16,3 +16,21 @@ $s: "center";
   #{$b}: 1px solid red;
   text-align: #{$s};
 }
+
+// $pages: "Mohammed", "dean", "asadi", "software";
+
+// @each $pg in $pages {
+//   body##{$pg} li.#{$pg} a {
+//     font-weight: 900;
+//     background-color: tomato;
+//   }
+// }
+
+$id: "top-right-pos", "bottom-left-tr-parent";
+
+@each $i in $id {
+  ##{$i} {
+    background-color: cyan;
+    #{$b}: 1px solid yellow;
+  }
+}

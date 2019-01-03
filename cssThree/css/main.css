@@ -9,4 +9,14 @@
   text-align: center;
 }
 
+#top-right-pos {
+  background-color: cyan;
+  border: 1px solid yellow;
+}
+
+#bottom-left-tr-parent {
+  background-color: cyan;
+  border: 1px solid yellow;
+}
+
 /*# sourceMappingURL=main.css.map */
