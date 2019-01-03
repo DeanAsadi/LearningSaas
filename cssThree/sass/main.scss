@@ -1,0 +1,9 @@
+%placeHolder {
+  position: relative;
+  background-color: darkolivegreen;
+  color: darkslategray;
+}
+
+#parent-div {
+  @extend %placeHolder;
+}
