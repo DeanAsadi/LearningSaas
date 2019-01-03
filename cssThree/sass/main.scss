@@ -7,3 +7,12 @@
 #parent-div {
   @extend %placeHolder;
 }
+
+//Using interpolation
+$b: "border";
+$s: "center";
+
+#top-left-pos {
+  #{$b}: 1px solid red;
+  text-align: #{$s};
+}
