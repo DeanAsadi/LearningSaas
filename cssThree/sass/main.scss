@@ -34,3 +34,13 @@ $id: "top-right-pos", "bottom-left-tr-parent";
     #{$b}: 1px solid yellow;
   }
 }
+
+$paragraph: "p";
+
+@each $p in $paragraph {
+  #{$p} {
+    background-color: darkgray;
+    text-align: center;
+    color: darkblue;
+  }
+}

@@ -19,4 +19,10 @@
   border: 1px solid yellow;
 }
 
+p {
+  background-color: darkgray;
+  text-align: center;
+  color: darkblue;
+}
+
 /*# sourceMappingURL=main.css.map */
